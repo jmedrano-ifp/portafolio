@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.5;
+    background-color: #222;
+}
+
+/* Header */
+.header {
+    background-color: black;
+    padding: 20px 50px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.header .logo {
+    float: left;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 20px;
+}
+
+.menu {
+    float: right;
+}
+
+.menu2 {
+    float: left;
+    margin-left: 100px;
+}
+
+.menu2 ul {
+    list-style: none;
+}
+
+.menu2 ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #f1c40f;
+}
+
+.documentals {
+    padding: 50px;
+    background-color: #222;
+    text-align: left;
+}
+
+.documentals h1 {
+    height: 50px;
+    font-size: 30px;
+    color: #CCC;
+}
+
+.documentals h2 {
+    height: 50px;
+    font-size: 30px;
+    color: #CCC;
+}
+
+.contenidor2 {
+    position: relative;
+    top: -1900px;
+}
+
+.contenidor3 {
+    position: relative;
+    top: -2500px;
+}
+
+.contenidor4 {
+    position: relative;
+    top: -3100px;
+}
+
+.contenidor5 {
+    position: relative;
+    top: -3800px;
+}
+
+.contenidor6 {
+    position: relative;
+    top: -4500px;
+}
+
+.galeria {
+    padding: 0px;
+    text-align: center;
+}
+
+.galeria2 {
+    position: relative;
+    top: -630px;
+}
+
+.galeria3 {
+    position: relative;
+    top: -1260px;
+}
+
+.galeria4 {
+    position: relative;
+    top: -1860px;
+}
+
+.galeria5 {
+    position: relative;
+    top: -2460px;
+}
+
+.galeria6 {
+    position: relative;
+    top: -3150px;
+}
+
+.galeria7 {
+    position: relative;
+    top: -3850px;
+}
+
+.galeria8 {
+    position: relative;
+    top: -4550px;
+}
+
+.tablero {
+    width: 1000px;
+    height: 1000px;
+    margin: 30px auto;
+    background-color: #222;
+}
+
+.nom1 {
+    position: relative;
+    left: -600px;
+    top: 350px;
+    color: #FFF;
+}
+
+.nom2 {
+    position: relative;
+    left: -600px;
+    top: 350px;
+    color: #FFF;
+}
+
+.celda {
+    float: left;
+    width: 240px;
+    height: 400px;
+    margin: 0 10px 80px 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.celda:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+img {
+    position: relative;
+    min-width:88%;
+    min-height:88%;
+    border-radius: 10px;
+}

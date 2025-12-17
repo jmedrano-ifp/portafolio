@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: Helvetica,;
+}
+
+h1 {
+    color: purple;
+    text-align: center;
+    text-shadow: 1px 1px 4px grey;
+}
+
+.contenidor {
+    width: 1280px;
+    margin: auto;
+}
+
+.cap {
+    height: 120px;
+}
+
+.cos {
+    overflow: auto;
+    overflow: hidden;
+    overflow: visible;
+    overflow: scroll;
+    height: 800px;
+}
+
+.peu {
+    background-color: black;
+    height: 300px;
+}
+
+li {
+    background-color: white;
+    height: 50px;
+    width: 180px;
+    margin: 10px;
+    float: left;
+}
+
+.esquerra, .centre, .dreta {
+    width: 20%;
+    float: left;
+}
+
+.centre {
+    background-color: white;
+    width: 60%;
+    overflow: scroll;
+    background-color: purple;
+    color: white;
+}
+
+.dreta {
+    background-color: yellowgreen;
+}
+
+p {
+    text-indent: 50px;
+}

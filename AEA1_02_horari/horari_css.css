@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    background: rgb(226, 221, 170);
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tabla */
+table {
+    background: white;
+    border: 0px;
+    text-align: center;
+    margin: auto;
+}
+
+td {
+    border: 1px solid black;
+}
+
+td:hover {
+    background-color: white;
+}
+
+tr {
+    height: 40px;
+}
+
+/* Título */
+h1 {
+    color: rgb(21, 70, 161);
+    text-align: center;
+}
+
+/* Asignaturas */
+.mp200 {
+    background: greenyellow;
+}
+
+.mp1485 {
+    background: skyblue;
+}
+
+.mo200 {
+    background: lightpink;
+}
+
+.mo100 {
+    background: gold;
+}
+
+.d1710 {
+    background: lightgreen;
+}
+
+.d1480 {
+    background: navajowhite;
+}
+
+.d211484 {
+    background: lightsalmon;
+}
+
+.dtut {
+    background: lavender;
+}
+
+.d1484 {
+    background: plum;
+}
+
+.d1665 {
+    background: lightseagreen;
+}
+
+/* Patio */
+.patio {
+    background: grey;
+    color: white;
+    font-weight: bold;
+}
+
+/* Cabeceras */
+.dia {
+    background: rgb(143, 197, 112);
+}
+
+.hora {
+    background: rgb(170, 170, 170);
+    font-weight: bold;
+}
