@@ -207,3 +207,8 @@ body {
     margin-top: 1rem;
     opacity: 0.8;
 }
+
+section {
+    scroll-margin-top: 100px;
+}
+
