@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: #111;
+    background: #0b0012;
     color: #fff;
     font-family: monospace;
 }
@@ -56,7 +56,7 @@ body {
 }
 
 .overlay {
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.2);
     height: 100%;
     width: 100%;
     position: relative;
@@ -114,13 +114,52 @@ body {
 .treballs {
     padding: 3rem 2rem;
     text-align: center;
+    background-color: #0a0010;
+    background-image:
+        radial-gradient(circle at center, rgba(180,120,255,0.25), rgba(0,0,0,0.95)),
+        repeating-linear-gradient(
+            0deg,
+            rgba(255,255,255,0.04),
+            rgba(255,255,255,0.04) 1px,
+            transparent 1px,
+            transparent 3px
+        );
+    background-attachment: fixed;
 }
 
 .grid {
-    width: 70%;
+    width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: repeat(3, 330px);
+    justify-content: center;
+    gap: 5rem; 
+}
+
+@media (max-width: 1050px) {
+    .grid {
+        grid-template-columns: repeat(2, 330px); 
+    }
+}
+
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: 330px;
+    }
+}
+
+.item {
+    width: 330px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #0ff;
+    border-radius: 15px;
+    margin: 20px auto;
+    position: relative;
+    box-shadow: 0 0 10px #0ff;
+    cursor: pointer;
+    transition: 0.25s;
 }
 
 .item span {
@@ -168,40 +207,3 @@ body {
     margin-top: 1rem;
     opacity: 0.8;
 }
-
-.grid {
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 330px);
-    justify-content: center;
-    gap: 5rem; 
-}
-
-@media (max-width: 1050px) {
-    .grid {
-        grid-template-columns: repeat(2, 330px); 
-    }
-}
-
-@media (max-width: 700px) {
-    .grid {
-        grid-template-columns: 330px;
-    }
-}
-
-.item {
-    width: 330px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    border: 4px solid #0ff;
-    border-radius: 15px;
-    margin: 20px auto;
-    position: relative;
-    box-shadow: 0 0 10px #0ff;
-    cursor: pointer;
-    transition: 0.25s;
-}
-
-
