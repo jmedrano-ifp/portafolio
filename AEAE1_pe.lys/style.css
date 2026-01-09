@@ -1,189 +1,132 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    line-height: 1.5;
-    background-color: #222;
-}
-
-/* Header */
-.header {
-    background-color: black;
-    padding: 20px 50px;
-    overflow: hidden;
+    font-family: Helvetica, sans-serif;
     color: #fff;
+    background:#222;
 }
 
-.header .logo {
+.fitxa {
+    height: 300px;
+    width: 175px;
+    margin: 10px;
     float: left;
-    font-weight: bold;
-    font-size: 24px;
-    margin: 0 20px;
 }
 
-.menu {
+.imatge {
+    width: 175px;
+    height: 260px;
+    border-radius: 5px;
+}
+
+.titol {
+    width: 100%;
+    height: 20px;
+
+    margin: 0;
+}
+
+.any {
+    width: 50%;
+    height: 20px;
+    margin: 0;
+    float: left;
+}
+
+.tipus {
+    width: 50%;
+    height: 20px;
+    margin: 0;
+    float: left;
+    text-align: right;
+}
+
+.primera {background-image:url(img/1982Koyaanisqatsi.jpg);}
+.segona {background-image:url(img/2004YTuQueSabes.jpg);}
+.tercera {background-image:url(img/2005Earthlings.jpg);}
+.quarta {background-image:url(img/2007Helvetica.jpg);}
+.cinquena {background-image:url(img/2007Sicko.jpg);}
+.sisena {background-image:url(img/2008Zeitgeist2.jpg);}
+.setena {background-image:url(img/2009ArtAndCopy.jpg);}
+.vuitena {background-image:url(img/2009Home.jpg);}
+.novena {background-image:url(img/2009RipARemixManifesto.jpg);}
+.desena {background-image:url(img/2010ComprarTirarComprar.jpg);}
+.onzena {background-image:url(img/2010InsideJob.jpg);}
+.dotzena {background-image:url(img/2011LaDoctrinaDeShock.jpg);}
+.tretzena {background-image:url(img/2012SearchingForSugarMan.jpg);}
+.catorzena {background-image:url(img/2012TheActOfKilling.jpg);}
+.quinzena {background-image:url(img/2013ElEspirituDel45.jpg);}
+
+h2 {
+    clear: both;
+    margin: 50px 0 0 0;
+}
+
+.peli {
+    background: red;
+}
+
+.serie {
+    background: yellow;
+}
+
+.documental {
+    background:blue;
+}
+
+.vista {
+    filter: grayscale(100%);
+    
+}
+
+.fitxa:hover {
+    opacity: 50%;
+}
+
+.navegacio {
+    height: 50px;
+    background: url(../img/quasinegre.png);
+
+    position: fixed;
+    z-index: 9999999999999999999999999999999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+.navegacio img {
+    float: left;
+    margin: 5px 20px;
+}
+
+.intern {
+    width: 400px;
+    float: left;
+}
+.extern {
+
+    width: 400px;
     float: right;
 }
 
-.menu2 {
+li {
     float: left;
-    margin-left: 100px;
-}
-
-.menu2 ul {
-    list-style: none;
-}
-
-.menu2 ul li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.menu ul {
-    list-style: none;
-}
-
-.menu ul li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.menu ul li a {
+    margin: 0 20px;
     text-decoration: none;
+    list-style-type: none;
+}
+
+a:link {
     color: #fff;
-    font-weight: bold;
-    transition: color 0.3s;
+}
+a:hover {
+    color: #fff;
 }
 
-.menu ul li a:hover {
-    color: #f1c40f;
+a:visited {
+    color: #fff;
 }
 
-.documentals {
-    padding: 50px;
-    background-color: #222;
-    text-align: left;
-}
-
-.documentals h1 {
-    height: 50px;
-    font-size: 30px;
-    color: #CCC;
-}
-
-.documentals h2 {
-    height: 50px;
-    font-size: 30px;
-    color: #CCC;
-}
-
-.contenidor2 {
-    position: relative;
-    top: -1900px;
-}
-
-.contenidor3 {
-    position: relative;
-    top: -2500px;
-}
-
-.contenidor4 {
-    position: relative;
-    top: -3100px;
-}
-
-.contenidor5 {
-    position: relative;
-    top: -3800px;
-}
-
-.contenidor6 {
-    position: relative;
-    top: -4500px;
-}
-
-.galeria {
-    padding: 0px;
-    text-align: center;
-}
-
-.galeria2 {
-    position: relative;
-    top: -630px;
-}
-
-.galeria3 {
-    position: relative;
-    top: -1260px;
-}
-
-.galeria4 {
-    position: relative;
-    top: -1860px;
-}
-
-.galeria5 {
-    position: relative;
-    top: -2460px;
-}
-
-.galeria6 {
-    position: relative;
-    top: -3150px;
-}
-
-.galeria7 {
-    position: relative;
-    top: -3850px;
-}
-
-.galeria8 {
-    position: relative;
-    top: -4550px;
-}
-
-.tablero {
-    width: 1000px;
-    height: 1000px;
-    margin: 30px auto;
-    background-color: #222;
-}
-
-.nom1 {
-    position: relative;
-    left: -600px;
-    top: 350px;
-    color: #FFF;
-}
-
-.nom2 {
-    position: relative;
-    left: -600px;
-    top: 350px;
-    color: #FFF;
-}
-
-.celda {
-    float: left;
-    width: 240px;
-    height: 400px;
-    margin: 0 10px 80px 0;
-    transition: transform 0.3s, opacity 0.3s;
-}
-
-.celda:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
-}
-
-img {
-    position: relative;
-    min-width:88%;
-    min-height:88%;
-    border-radius: 10px;
+a:active {
+    color: #fff;
 }
