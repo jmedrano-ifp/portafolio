@@ -8,27 +8,35 @@
 </head>
 <body>
 
+    <!-- MENÚ -->
     <header class="menu">
         <nav>
             <ul>
                 <li><a href="#benvinguda">Benvinguts</a></li>
                 <li><a href="#treballs">Treballs</a></li>
+                <li><a href="#sobre-mi">Sobre mi</a></li>
                 <li><a href="#contacte">Contacte</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- HEADER -->
     <section class="header">
         <div class="overlay">
-            <h1>PORTAFOLI JOEL MEDRANO</h1>
+            <div class="header-bg-dark"></div>
+            <h1 class="header-title">PORTAFOLI JOEL MEDRANO</h1>
         </div>
     </section>
 
+    <!-- SECCIÓN BIENVENIDA -->
     <section id="benvinguda" class="benvinguda">
-        <h2 class="title-glow">Benvinguts!</h2>
+        <div class="section-bg-dark">
+            <h2 class="title-glow benvinguda-title">Benvinguts!</h2>
+        </div>
+
         <p>
             Aquest és el meu portafoli amb estètica <strong>retro gaming</strong>, inspirat en 
-            videojocs clàssics d’arcade, pantalles de tub i il·luminació de neó.
+            videojocs clàssics d'arcade, pantalles de tub i il·luminació de neó.
         </p>
         <p>
             Podràs explorar els meus treballs, cadascun presentat en forma de targeta 
@@ -40,8 +48,11 @@
         </a>
     </section>
 
+    <!-- SECCIÓN TRABAJOS -->
     <section id="treballs" class="treballs">
-        <h2 class="title-glow">Treballs</h2>
+        <div class="section-bg-dark">
+            <h2 class="title-glow title-center treballs-title">Treballs</h2>
+        </div>
 
         <div class="grid">
 
@@ -54,7 +65,6 @@
             <div class="item" style="background-image: url('img/watchmen.png');">
                 <a href="https://jmedrano-ifp.github.io/portafolio/AEA3_03_watchmen/"><span>Watchmen</span></a>
             </div>
-
             <div class="item" style="background-image: url('img/dames.png');">
                 <a href="https://jmedrano-ifp.github.io/portafolio/AEA3_04_dames/"><span>Escacs</span></a>
             </div>
@@ -64,7 +74,6 @@
             <div class="item" style="background-image: url('img/photoshop.png');">
                 <a href="https://jmedrano-ifp.github.io/portafolio/AEA4_01_photoshop/"><span>Photoshop</span></a>
             </div>
-
             <div class="item" style="background-image: url('img/floreta.png');">
                 <a href="https://jmedrano-ifp.github.io/portafolio/AEA6_01_floreta/"><span>Floreta</span></a>
             </div>
@@ -74,7 +83,6 @@
             <div class="item" style="background-image: url('img/llibres.png');">
                 <a href="https://jmedrano-ifp.github.io/portafolio/AEA7_01_progres/"><span>Llibres</span></a>
             </div>
-
             <div class="item" style="background-image: url('img/bus.png');">
                 <a href="https://jmedrano-ifp.github.io/portafolio/AEA6_02_BUS/"><span>Bus</span></a>
             </div>
@@ -88,14 +96,63 @@
         </div>
     </section>
 
-    <section id="contacte" class="contacte">
-        <h2 class="title-glow">Contacte</h2>
+    <!-- SECCIÓN SOBRE MI -->
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="section-bg-dark">
+            <h2 class="title-glow sobre-mi-title">Sobre mi</h2>
+        </div>
 
-        <p>Pots enviar-me un missatge directament prement el botó següent:</p>
+        <div class="sobre-mi-content">
+            <div class="profile-info">
+                <p class="intro-text">
+                    <strong>Em dic Joel Medrano Flores, tinc 23 anys i soc un apassionat del disseny gràfic en constant evolució.</strong>
+                </p>
+                
+                <p>
+                    Actualment, estic immers en el cicle superior de <strong>"Publicacions Impreses i Multimèdia"</strong>, 
+                    on estic aprenent tot l'espectre del disseny contemporani: des de la maquetació editorial 
+                    tradicional fins a les últimes tendències en disseny digital interactiu.
+                </p>
+                
+                <p>
+                    La meva formació no es limita només al món del disseny. També vaig completar amb èxit 
+                    un <strong>cicle mitjà d'Informàtica</strong>, que m'ha proporcionat una base sòlida en tecnologia 
+                    i programació. Aquesta combinació única de coneixements em permet entendre tant l'estètica 
+                    visual com la funcionalitat tècnica dels projectes digitals.
+                </p>
+                
+                <div class="skills-section">
+                    <p><strong>El que em diferencia:</strong></p>
+                    <ul>
+                        <li>💻 <strong>Visió dual</strong>: Entenc tant el codi com el disseny</li>
+                        <li>🎨 <strong>Versatilitat</strong>: Domino tant el món imprés com el digital</li>
+                        <li>🚀 <strong>Aplicació pràctica</strong>: Porto els conceptes teòrics a projectes reals</li>
+                        <li>📱 <strong>Enfoc multimèdia</strong>: Creo experiències completes per a diversos formats</li>
+                    </ul>
+                </div>
+                
+                <p class="closing-text">
+                    El meu objectiu és fusionar la precisió tècnica amb la creativitat artística per crear 
+                    solucions de disseny que no només siguin visualment impactants, sinó també funcionalment 
+                    eficients i tècnicament sòlides.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTE -->
+    <section id="contacte" class="contacte">
+        <div class="section-bg-dark">
+            <h2 class="title-glow contacte-title">Contacte</h2>
+        </div>
+
+        <p>
+            Pots enviar-me un missatge directament prement el botó següent:
+        </p>
 
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jmedrano@ifp-alguero.org" target="_blank">
             <button class="btn-contact">📨 CONTACTA'M</button>
-        </a>
+        </a><br><br><br>
 
         <p class="small-info">
             També pots escriure al següent correu:  
