@@ -1,61 +1,163 @@
 body {
-    margin: 0;
-    font-family: Helvetica,;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 h1 {
-    color: purple;
-    text-align: center;
-    text-shadow: 1px 1px 4px grey;
+  color: purple;
+  text-align: center;
+  text-shadow: 1px 1px 4px grey;
 }
 
 .contenidor {
-    width: 1280px;
-    margin: auto;
+  width: 1280px;
+  margin: auto;
 }
 
 .cap {
-    height: 120px;
+  height: 120px;
 }
 
 .cos {
-    overflow: auto;
-    overflow: hidden;
-    overflow: visible;
-    overflow: scroll;
-    height: 800px;
+  height: 800px;
+  overflow: scroll;
 }
 
 .peu {
-    background-color: black;
-    height: 300px;
+  background-color: black;
+  height: 300px;
 }
 
 li {
-    background-color: white;
-    height: 50px;
-    width: 180px;
-    margin: 10px;
-    float: left;
+  background-color: white;
+  height: 50px;
+  width: 180px;
+  margin: 10px;
+  float: left;
 }
 
-.esquerra, .centre, .dreta {
-    width: 20%;
-    float: left;
+.esquerra,
+.centre,
+.dreta {
+  width: 20%;
+  float: left;
 }
 
 .centre {
-    background-color: white;
-    width: 60%;
-    overflow: scroll;
-    background-color: purple;
-    color: white;
+  width: 60%;
+  background-color: purple;
+  color: white;
+  overflow: scroll;
 }
 
 .dreta {
-    background-color: yellowgreen;
+  background-color: yellowgreen;
 }
 
 p {
-    text-indent: 50px;
+  text-indent: 50px;
 }
+
+#alternador {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+}
+
+#alternador label {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  border-radius: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+#alternador label:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+#alternador b {
+  display: block;
+  width: 2.5rem;
+  height: 0.35rem;
+  background: white;
+  border-radius: 1rem;
+  transition: all 0.4s ease;
+}
+
+#alternador input[type="checkbox"] {
+  display: none;
+}
+
+.desplega {
+  position: absolute;
+  top: 5.5rem;
+  left: -14rem;
+  width: 12rem;
+  background: linear-gradient(180deg, #1f4037, #99f2c8);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.5s ease;
+}
+
+#alternador ul {
+  margin: 0;
+  padding: 0;
+}
+
+#alternador li {
+  list-style: none;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  float: none;
+  margin: 0;
+  background: transparent;
+  transition: all 0.4s ease;
+}
+
+#alternador li:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#alternador li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  letter-spacing: 1px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#alternador input[type=checkbox]:checked + label ~ .desplega {
+  left: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+
+#alternador li,
+#alternador li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#alternador li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
