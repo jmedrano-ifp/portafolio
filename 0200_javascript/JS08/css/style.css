@@ -1,0 +1,110 @@
+.cub {
+            height: 5rem;
+            width: 5rem;
+            transition: 1s;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        .cara {
+            width: 5rem;
+            height: 5rem;
+            font-size: 5rem;
+            text-align: center;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .blava {
+            background: skyblue;
+            transform-origin: left;
+            transform: translateZ(-5rem);
+        }
+
+        .groga {
+            background: yellow;
+            transform-origin: bottom;
+            transform: rotateX(90deg);
+        }
+
+        .vermella {
+            background: red;
+            transform: rotateY(90deg);
+            transform-origin: left;
+        }
+
+        .rosa {
+            background: pink;
+            transform: rotateY(-90deg);
+            transform-origin: right;
+        }
+
+        .lila {
+            background: violet;
+            transform: rotateX(-90deg);
+            transform-origin: top;
+        }
+
+        .verda {
+            background: greenyellow;
+            position: absolute;
+            transform: rotateX(0deg);
+        }
+
+        .contenidor {
+            margin: 10rem auto;
+            width: 5rem;
+            height: 5rem;
+            perspective: 10rem;
+        }
+
+        .cub:hover {
+            transform: rotateX(180deg) rotateZ(45deg);
+        }
+
+        .joystick {
+            position: relative;
+            width: 12rem;
+            height: 12rem;
+            margin: auto;
+        }
+
+        .boto {
+            position: absolute;
+            width: 4rem;
+            height: 4rem;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            border-radius: 0.3rem;
+            border: 0.8px solid black;
+            cursor: pointer;
+        }
+
+        #amunt {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #avall {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #esquerra {
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #dreta {
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }

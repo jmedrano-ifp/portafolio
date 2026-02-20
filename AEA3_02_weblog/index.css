@@ -161,3 +161,31 @@ p {
   text-decoration: none;
 }
 
+
+/* RESPONSIVE */
+
+@media (max-width: 480px)
+{
+
+}
+
+@media (min-width: 481px) and (max-width: 1279px)
+{
+    #alternador {
+        display: block;
+    }
+    .menuhorizontal {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px)
+{
+    #alternador {
+        display: none;
+    }
+
+.menuhorizontal{
+    display: block;
+}
+}

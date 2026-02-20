@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS07</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    #sol {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: orange;
+      display: inline-block;
+      margin: 1rem;
+      cursor: pointer;
+      float: left;
+    }
+
+    #lluna {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: transparent;
+      display: inline-block;
+      margin: 1rem;
+      box-shadow: 0.5rem 0rem 0 gray;
+      cursor: pointer;
+      float: left;
+    }
+
+    ul {
+        display: inline-block;
+        margin: 0rem;
+        float: right;
+    }
+
+    li {
+        display: inline-block;
+        margin: 1rem;
+        font-size: 2rem;
+    }
+
+    p {
+      transition: color 0.5s;
+    }
+
+    #txt {
+        width: 40rem;
+        margin: 1rem auto;
+        clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="sol"></div>
+  <div id="lluna"></div>
+
+  <ul>
+    <li id="a">A</li>
+    <li id="aa">AA</li>
+    <li id="aaa">AAA</li>
+  </ul>
+
+  <p id="txt">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit eofjfo e alex lakeor aelx aek xdndejwnrtqlororemrterter ipsum dolort, sit amet cotertrnsectetur rteradipisicing elit eofjfo e alex lakeor aelx aek e irpsum dolor, s it amet cotertnsectetuertwtyrtr tadipisetyrtrteicing elit eofjfo e alex lakeor aelx aek xdntlex lakeor aelx aek xdndejwnql...
+  </p>
+
+  <script>
+    const txt = document.getElementById("txt");
+
+    document.getElementById("sol").addEventListener("click", sol);
+    document.getElementById("lluna").addEventListener("click", lluna);
+
+    function lluna() {
+      document.body.style.backgroundColor = "black";
+      document.body.style.boxShadow = "0.5rem 0rem 0 white"; // corregido
+      txt.style.color = "white";
+    }
+
+    function sol() {
+      document.body.style.backgroundColor = "white";
+      document.body.style.boxShadow = "none"; // opcional
+      txt.style.color = "black";
+    }
+
+    //definim els events
+
+    document.getElementById('a').addEventListener('click', reduir);
+    document.getElementById('aa').addEventListener('click', normal);
+    document.getElementById('aaa').addEventListener('click', augmentar);
+
+    //creem les funcions
+
+    function reduir() {
+        document.getElementById('txt').style.fontSize="0.5rem"
+    }
+
+    function normal() {
+        document.getElementById('txt').style.fontSize="1rem"
+    }
+
+    function augmentar() {
+        document.getElementById('txt').style.fontSize="2rem"
+    }
+  </script>
+</body>
+</html>
