@@ -1,11 +1,11 @@
 :root {
-  --color1: green;
-  --color2: #fff;;
-  --color3: #ddd;
-  --color4: pink;
-  --color5: #fff;;
-  --color6: #d4c2fc;
-  --color7: #998FC7;
+  --color1: #6C63FF;
+  --color2: #FFFFFF;
+  --color3: #F4F6FB;
+  --color4: #FF6584;
+  --color5: #1F2933;
+  --color6: #E0E7FF;
+  --color7: #C7D2FE;
 
   --tipografia1: Arial, Helvetica, sans-serif;
   --tipografia2: Verdana;
@@ -17,8 +17,8 @@
 @font-face {
     font-family: 'Day Roman';
     src: url('fonts/DayRoman.woff2') format('woff2'),
-        url('fonts/DayRoman.woff') format('woff'),
-        url('fonts/DayRoman.svg#DayRoman') format('svg');
+         url('fonts/DayRoman.woff') format('woff'),
+         url('fonts/DayRoman.svg#DayRoman') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -28,25 +28,27 @@ body {
     font-family: var(--tipografia1);
     font-size: 2rem;
     text-align: center;
+    background-color: var(--color3);
+    color: var(--color5);
+    margin: 0;
 }
 
 h1 {
-    font-family: "Fascinate Inline", system-ui;
+    font-family: var(--tipografia3);
     font-weight: 400;
-    font-style: normal;
+    color: var(--color1);
 }
 
 p {
-    font-family: var(--tipografia5);
-    font-weight: 400;
-    font-style: normal;
-    margin:0 auto;
-    max-width: 1920px;
     font-family: 'Day Roman';
+    margin: 0 auto;
+    max-width: 1200px;
+    line-height: 1.6;
 }
+
 .progres {
     height: 10px;
-    background: var(--color5);
+    background: linear-gradient(90deg, var(--color1), var(--color4));
     position: fixed;
     top: 0;
     left: 0;
@@ -55,17 +57,12 @@ p {
     scale: 0.2 1;
     animation: analitzador linear;
     animation-timeline: scroll();
-    -webkit-animation-timeline: scroll();
-        -moz-animation-timeline: scroll();
-            animation-timeline: scroll();
-
 }
 
 @keyframes analitzador {
-    to{
+    to {
         scale: 1 1;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -78,24 +75,22 @@ p {
   body {
     background-color: var(--color7);
   }
-  p {
-    margin: 0 auto;
-  }
 }
 
 @media (min-width: 1280px) {
   body {
-    background-color: var(--color5);
+    background-color: var(--color3);
   }
   p {
     columns: 2;
+    column-gap: 3rem;
   }
 }
 
-.rodona{
+.rodona {
     width: 10rem;
     height: 10rem;
-    background: var(--color1);
+    background: linear-gradient(135deg, var(--color1), var(--color4));
     border-radius: 50%;
-    margin: auto;
+    margin: 3rem auto;
 }
