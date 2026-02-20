@@ -10,21 +10,51 @@ html {
 
 body {
     background: #0b0012;
-    color: #fff;
+    color: white;
     font-family: monospace;
-    overflow-x: hidden;
 }
 
-/* MENÚ */
+/* MENÚ CON LOGO */
 .menu {
     width: 100%;
-    background: #000;
+    background: black;
     border-bottom: 4px solid #0ff;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     position: fixed;
     top: 0;
     z-index: 20;
     box-shadow: 0 0 10px #0ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Estilo del logo */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    border: 2px solid #ff00ff;
+    padding: 0.2rem 0.8rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff00ff;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    animation: neonPulseMagenta 2s infinite alternate;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    border-color: #0ff;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff, 0 0 30px #0ff;
+    box-shadow: 0 0 20px #0ff;
+}
+
+.menu nav {
+    flex: 1;
 }
 
 .menu ul {
@@ -32,6 +62,9 @@ body {
     text-align: center;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .menu ul li {
@@ -69,7 +102,6 @@ body {
     width: 100%;
 }
 
-/* FONDO OSCURO TRANSPARENTE PARA EL TÍTULO DEL HEADER */
 .header-bg-dark {
     position: absolute;
     top: 0;
@@ -80,7 +112,6 @@ body {
     z-index: 1;
 }
 
-/* TÍTULO PORTAFOLI - EFECTO PARPADEO */
 .header-title {
     font-size: 5rem;
     text-align: center;
@@ -124,7 +155,7 @@ body {
     );
 }
 
-/* TITULOS NEON DE SECCIONES CON COLORES DIFERENTES */
+/* TITULOS NEON DE SECCIONES */
 .title-glow {
     margin-bottom: 0;
     font-size: 3rem;
@@ -133,7 +164,6 @@ body {
     padding: 0 1rem;
 }
 
-/* Color específico para cada título de sección */
 .benvinguda-title {
     color: #ff00ff;
     animation: neonPulseMagenta 2.5s infinite alternate;
@@ -159,7 +189,7 @@ body {
     width: 100%;
 }
 
-/* ANIMACIONES NEON PARA CADA COLOR */
+/* ANIMACIONES NEON */
 @keyframes neonPulseMagenta {
     from {
         text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff;
@@ -202,12 +232,11 @@ section {
     text-align: center;
     position: relative;
     padding: 0 1rem 3rem 1rem;
-    color: #fff;
+    color: white;
     width: 100%;
     overflow: hidden;
 }
 
-/* Fondo estilo retro + scanlines para todas las secciones */
 .benvinguda {
     background-color: #1a001f;
     background-image:
@@ -219,7 +248,6 @@ section {
             transparent 1px,
             transparent 3px
         );
-    background-attachment: fixed;
     border-top: 4px solid #0ff;
 }
 
@@ -234,7 +262,6 @@ section {
             transparent 1px,
             transparent 3px
         );
-    background-attachment: fixed;
 }
 
 .sobre-mi {
@@ -248,11 +275,10 @@ section {
             transparent 1px,
             transparent 4px
         );
-    background-attachment: fixed;
 }
 
 .contacte {
-    background-color: #000;
+    background-color: black;
     background-image:
         radial-gradient(circle at center, rgba(0,255,255,0.15), rgba(0,0,0,0.9)),
         repeating-linear-gradient(
@@ -262,12 +288,11 @@ section {
             transparent 1px,
             transparent 3px
         );
-    background-attachment: fixed;
     border-top: 4px solid #0ff;
     border-bottom: 4px solid #0ff;
 }
 
-/* Párrafos de secciones */
+/* Párrafos */
 .benvinguda p,
 .sobre-mi p,
 .contacte p {
@@ -285,14 +310,12 @@ section {
     padding: 0.8rem 2.5rem;
     font-size: 1.3rem;
     background: #0ff;
-    border: 3px solid #fff;
-    color: #000;
+    border: 3px solid white;
+    color: black;
     cursor: pointer;
     box-shadow: 0 0 10px #0ff;
     transition: 0.25s;
-    min-width: 150px;
-    max-width: 250px;
-    width: auto;
+    width: 200px;
 }
 
 .btn-start:hover {
@@ -301,21 +324,19 @@ section {
     transform: scale(1.1);
 }
 
+/* GRID DE TRABAJOS */
 .grid {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-content: center;
-    gap: 2rem;
-    padding: 0 1rem;
+    text-align: center;
 }
 
 .item {
-    width: 100%;
-    max-width: 330px;
+    width: 300px;
     height: 200px;
+    display: inline-block;
+    margin: 15px;
     background-size: cover;
     background-position: center;
     border: 4px solid #0ff;
@@ -323,7 +344,9 @@ section {
     box-shadow: 0 0 10px #0ff;
     transition: 0.25s;
     position: relative;
-    margin: 0 auto;
+    vertical-align: top;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .item:hover {
@@ -355,13 +378,11 @@ section {
     font-size: 1.2rem;
     background: #ff0;
     border: 3px solid #0ff;
-    color: #000;
+    color: black;
     cursor: pointer;
     box-shadow: 0 0 15px #ff0;
     transition: 0.25s;
-    min-width: 180px;
-    max-width: 280px;
-    width: auto;
+    width: 220px;
 }
 
 .btn-contact:hover {
@@ -377,7 +398,7 @@ section {
     padding: 0 1rem;
 }
 
-/* ESTILOS PARA LA SECCIÓN SOBRE MI */
+/* SOBRE MI */
 .sobre-mi-content {
     max-width: 800px;
     margin: 0 auto;
@@ -398,10 +419,10 @@ section {
 }
 
 .intro-text {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
     text-align: center;
-    margin-bottom: 2rem !important;
-    color: #fff;
+    margin-bottom: 2rem;
+    color: white;
     padding: 0.8rem;
     border-left: 4px solid #ffff00;
     border-right: 4px solid #ffff00;
@@ -449,12 +470,6 @@ section {
     transform: translateX(5px);
 }
 
-.what-differentiates {
-    font-weight: bold;
-    color: #ffff00;
-    text-shadow: 0 0 5px rgba(255, 255, 0, 0.7);
-}
-
 .closing-text {
     font-style: italic;
     text-align: center;
@@ -468,7 +483,7 @@ section {
     font-size: 1.1rem;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE - VERSIÓN SIMPLE */
 @media screen and (max-width: 1024px) {
     .header-title {
         font-size: 4rem;
@@ -477,9 +492,25 @@ section {
     .title-glow {
         font-size: 2.5rem;
     }
+    
+    .item {
+        width: 280px;
+        height: 180px;
+        margin: 12px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .menu {
+        padding: 0.8rem 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        padding: 0.1rem 0.5rem;
+        margin-right: 0.5rem;
+    }
+
     .menu ul li {
         margin: 0 0.8rem;
     }
@@ -502,14 +533,10 @@ section {
         font-size: 2.2rem;
     }
     
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-    }
-    
     .item {
-        max-width: 280px;
-        height: 180px;
+        width: 260px;
+        height: 170px;
+        margin: 10px;
     }
     
     .item span {
@@ -529,42 +556,28 @@ section {
     .btn-start {
         font-size: 1.2rem;
         padding: 0.7rem 2rem;
+        width: 180px;
     }
     
     .btn-contact {
         font-size: 1.1rem;
         padding: 0.7rem 2rem;
-    }
-    
-    .profile-info p {
-        font-size: 1rem;
-    }
-    
-    .intro-text {
-        font-size: 1.1rem !important;
-    }
-    
-    .skills-section p {
-        font-size: 1.1rem;
-    }
-    
-    .skills-section li {
-        font-size: 0.95rem;
-    }
-    
-    .closing-text {
-        font-size: 1rem;
+        width: 200px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .menu ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
     }
-    
+
+    .logo {
+        margin-bottom: 0.5rem;
+        font-size: 1.8rem;
+    }
+
     .menu ul li {
         margin: 0.3rem;
     }
@@ -576,12 +589,11 @@ section {
     
     .header {
         height: 200px;
-        margin-top: 60px;
+        margin-top: 130px;
     }
     
     .header-title {
         font-size: 2rem;
-        line-height: 1.1;
     }
     
     .title-glow {
@@ -592,29 +604,17 @@ section {
         padding: 0 0.8rem 2rem 0.8rem;
     }
     
-    .grid {
-        grid-template-columns: 1fr;
-        gap: 1.2rem;
-    }
-    
     .item {
-        max-width: 100%;
+        width: 90%;
+        max-width: 280px;
         height: 160px;
+        margin: 10px auto;
+        display: block;
     }
     
     .item span {
         font-size: 0.85rem;
         width: 85%;
-    }
-    
-    .skills-section li {
-        font-size: 0.9rem;
-        padding: 0.6rem;
-    }
-    
-    .intro-text {
-        padding: 0.6rem;
-        font-size: 1rem !important;
     }
     
     .btn-start,
@@ -623,6 +623,9 @@ section {
         max-width: 250px;
         font-size: 1rem;
         padding: 0.6rem 1.5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .small-info {
@@ -630,19 +633,6 @@ section {
     }
 }
 
-/* Ajustes para tablets */
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-    .grid {
-        grid-template-columns: repeat(2, minmax(280px, 1fr));
-        gap: 2rem;
-    }
-    
-    .item {
-        max-width: 100%;
-    }
-}
-
-/* Prevenir desbordamiento en móviles muy pequeños */
 @media screen and (max-width: 320px) {
     .menu a {
         font-size: 0.8rem;
@@ -655,12 +645,6 @@ section {
     
     .title-glow {
         font-size: 1.4rem;
-    }
-    
-    .btn-start,
-    .btn-contact {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
     }
     
     .item span {
